@@ -136,12 +136,14 @@ export function createServer(options: ServerOptions) {
 
 
   server.registerTool("interpret_vitals", {
-    description: "根据心率(BPM)和血氧(SpO2)数据分析脉象、气血状态，检索《伤寒论》相关条文供辨证参考。本工具不替代医师诊断。",
+    description: "根据心率(BPM)、血氧(SpO2)和血压数据分析脉象、气血状态，检索《伤寒论》相关条文供辨证参考。本工具不替代医师诊断。",
     inputSchema: {
       bpm: z.number().min(40).max(220).describe("心率，单位次/分钟"),
       spo2: z.number().min(50).max(100).describe("血氧饱和度，百分比"),
+      systolic: z.number().min(60).max(250).optional().describe("收缩压（高压），单位 mmHg"),
+      diastolic: z.number().min(30).max(150).optional().describe("舒张压（低压），单位 mmHg"),
       symptoms: z.string().optional().describe("患者自述症状，如：头痛、恶寒、出汗等"),
     },
-  }, async ({ bpm, spo2, symptoms }) => jsonResult(interpretVitals({ bpm, spo2, symptoms })));
+  }, async ({ bpm, spo2, systolic, diastolic, symptoms }) => jsonResult(interpretVitals({ bpm, spo2, systolic, diastolic, symptoms })));
   return server;
 }
