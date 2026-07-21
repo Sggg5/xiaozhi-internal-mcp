@@ -11,6 +11,7 @@ import { searchBlogArticles } from "./tools/searchBlogArticles.js";
 import { searchShanghanArticles, searchShanghanByType } from "./tools/searchShanghanArticles.js";
 import { getShanghanDetail } from "./tools/getShanghanDetail.js";
 import { askShanghanKnowledge } from "./tools/askShanghanKnowledge.js";
+import { interpretVitals } from "./tools/interpretVitals.js";
 
 export interface ServerOptions {
   quoteAuthorized: boolean;
@@ -133,5 +134,14 @@ export function createServer(options: ServerOptions) {
     },
   }, async ({ question, limit }) => jsonResult(askShanghanKnowledge(question, limit)));
 
+
+  server.registerTool("interpret_vitals", {
+    description: "根据心率(BPM)和血氧(SpO2)数据分析脉象、气血状态，检索《伤寒论》相关条文供辨证参考。本工具不替代医师诊断。",
+    inputSchema: {
+      bpm: z.number().min(40).max(220).describe("心率，单位次/分钟"),
+      spo2: z.number().min(50).max(100).describe("血氧饱和度，百分比"),
+      symptoms: z.string().optional().describe("患者自述症状，如：头痛、恶寒、出汗等"),
+    },
+  }, async ({ bpm, spo2, symptoms }) => jsonResult(interpretVitals({ bpm, spo2, symptoms })));
   return server;
 }

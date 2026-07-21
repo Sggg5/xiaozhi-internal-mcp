@@ -14,7 +14,7 @@ test("stdio MCP exposes and calls all tools", async () => {
   await client.connect(transport);
   try {
     const tools = await client.listTools();
-    assert.equal(tools.tools.length, 12);
+    assert.equal(tools.tools.length, 13);
     const result = await client.callTool({
       name: "query_pipe_size",
       arguments: { keyword: "DN50管子" },
