@@ -1,0 +1,10 @@
+{
+  "mcpEndpoint": "<小智后台生成的 wss://api.xiaozhi.me/mcp/?token=... 接入点>",
+  "mcpServers": {
+    "xiaozhi-internal-mcp": {
+      "type": "http",
+      "url": "https://<worker-domain>/mcp",
+      "apiKey": "<本服务的 MCP_TOKEN，不是小智接入点 token>"
+    }
+  }
+}

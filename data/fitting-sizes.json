@@ -1,0 +1,258 @@
+[
+  {
+    "fittingType": "弯头",
+    "dn": "DN15",
+    "matchedPipeOuterDiameter": 16,
+    "commonWallThickness": [
+      0.8,
+      1
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "弯头",
+    "dn": "DN20",
+    "matchedPipeOuterDiameter": 20,
+    "commonWallThickness": [
+      0.8,
+      1
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "弯头",
+    "dn": "DN25",
+    "matchedPipeOuterDiameter": 25.4,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "弯头",
+    "dn": "DN32",
+    "matchedPipeOuterDiameter": 32,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "弯头",
+    "dn": "DN40",
+    "matchedPipeOuterDiameter": 40,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "弯头",
+    "dn": "DN50",
+    "matchedPipeOuterDiameter": 50.8,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "直接",
+    "dn": "DN15",
+    "matchedPipeOuterDiameter": 16,
+    "commonWallThickness": [
+      0.8,
+      1
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "直接",
+    "dn": "DN20",
+    "matchedPipeOuterDiameter": 20,
+    "commonWallThickness": [
+      0.8,
+      1
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "直接",
+    "dn": "DN25",
+    "matchedPipeOuterDiameter": 25.4,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "直接",
+    "dn": "DN32",
+    "matchedPipeOuterDiameter": 32,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "直接",
+    "dn": "DN40",
+    "matchedPipeOuterDiameter": 40,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "直接",
+    "dn": "DN50",
+    "matchedPipeOuterDiameter": 50.8,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "三通",
+    "dn": "DN25",
+    "matchedPipeOuterDiameter": 25.4,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "三通",
+    "dn": "DN32",
+    "matchedPipeOuterDiameter": 32,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "三通",
+    "dn": "DN40",
+    "matchedPipeOuterDiameter": 40,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  },
+  {
+    "fittingType": "三通",
+    "dn": "DN50",
+    "matchedPipeOuterDiameter": 50.8,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "connectionType": "卡压式",
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "remark": "mock 数据，实际尺寸以图纸和样本为准。"
+  }
+]

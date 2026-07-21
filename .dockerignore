@@ -1,0 +1,12 @@
+.git
+.gitignore
+node_modules
+dist
+.env
+.env.*
+.dev.vars
+.wrangler
+*.log
+tool-calls.jsonl
+xiaozhi.cache.json
+xiaozhi.config*.json

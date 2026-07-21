@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.dev.vars
+.wrangler/
+.tmp-xiaozhi/
+xiaozhi.config.json
+.env.zspace
+tool-calls.jsonl
+xiaozhi.cache.json
+xiaozhi-zspace-deploy.zip
+*.log

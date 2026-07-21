@@ -1,0 +1,137 @@
+[
+  {
+    "dn": "DN15",
+    "outerDiameter": 16,
+    "commonWallThickness": [
+      0.8,
+      1
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN20",
+    "outerDiameter": 20,
+    "commonWallThickness": [
+      0.8,
+      1
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN25",
+    "outerDiameter": 25.4,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN32",
+    "outerDiameter": 32,
+    "commonWallThickness": [
+      1,
+      1.2
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN40",
+    "outerDiameter": 40,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN50",
+    "outerDiameter": 50.8,
+    "commonWallThickness": [
+      1.2,
+      1.5
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN65",
+    "outerDiameter": 76.1,
+    "commonWallThickness": [
+      1.5,
+      2
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN80",
+    "outerDiameter": 88.9,
+    "commonWallThickness": [
+      1.5,
+      2
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  },
+  {
+    "dn": "DN100",
+    "outerDiameter": 101.6,
+    "commonWallThickness": [
+      1.5,
+      2
+    ],
+    "materialOptions": [
+      "304",
+      "316L"
+    ],
+    "standard": "GB/T 19228.2",
+    "application": "薄壁不锈钢管道系统",
+    "remark": "mock 数据，选型和正式报价前需人工复核。"
+  }
+]

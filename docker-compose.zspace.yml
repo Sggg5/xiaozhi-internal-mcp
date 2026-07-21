@@ -1,0 +1,54 @@
+services:
+  github-sync:
+    image: public.ecr.aws/docker/library/node:22-bookworm
+    restart: unless-stopped
+    working_dir: /repo
+    command: node /repo/docker/github-sync/sync-github.mjs
+    environment:
+      GIT_REPO_URL: ${GIT_REPO_URL:-https://github.com/Sggg5/xiaozhi-internal-mcp.git}
+      GIT_BRANCH: ${GIT_BRANCH:-main}
+      SYNC_INTERVAL_SECONDS: ${SYNC_INTERVAL_SECONDS:-3600}
+    volumes:
+      - .:/repo
+
+  internal-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      MCP_TOKEN: ${MCP_TOKEN}
+      PORT: "3000"
+      XIAOZHI_DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data:ro
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - fetch('http://127.0.0.1:3000/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  xiaozhi-client:
+    build:
+      context: ./docker/xiaozhi-client
+    restart: unless-stopped
+    depends_on:
+      internal-mcp:
+        condition: service_healthy
+    environment:
+      XIAOZHI_ENDPOINT: ${XIAOZHI_ENDPOINT}
+      MCP_TOKEN: ${MCP_TOKEN}
+      MCP_URL: http://internal-mcp:3000/mcp
+      XIAOZHI_CONFIG_DIR: /data
+    volumes:
+      - xiaozhi-data:/data
+    ports:
+      - "${XIAOZHI_WEB_PORT:-9999}:9999"
+
+volumes:
+  xiaozhi-data:

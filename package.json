@@ -1,0 +1,43 @@
+{
+  "name": "xiaozhi-internal-mcp",
+  "version": "2.0.0",
+  "description": "小智 AI 内部尺寸查询、报价测算与博客知识库远程 MCP 服务",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "dev:http": "tsx src/http.ts",
+    "dev:worker": "node ./node_modules/wrangler/bin/wrangler.js dev",
+    "start": "node dist/src/index.js",
+    "start:http": "node dist/src/http.js",
+    "data:build": "node scripts/build-data.mjs",
+    "deploy": "node ./node_modules/wrangler/bin/wrangler.js deploy",
+    "deploy:dry-run": "node ./node_modules/wrangler/bin/wrangler.js deploy --dry-run",
+    "worker:types": "node ./node_modules/wrangler/bin/wrangler.js types --include-runtime false",
+    "test": "npm run build && tsx --test test/*.test.ts",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/src/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.10",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "hono": "^4.12.7",
+    "js-yaml": "^5.2.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260615.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.100.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "esbuild": "0.28.1"
+  },
+  "private": true
+}

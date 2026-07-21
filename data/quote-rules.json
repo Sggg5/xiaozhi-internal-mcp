@@ -1,0 +1,31 @@
+{
+  "materialPricePerKg": {
+    "304": 16.8,
+    "316L": 27.5
+  },
+  "baseProcessingPerMeter": 1.2,
+  "surfacePerMeter": {
+    "酸洗": 0,
+    "抛光": 0.8,
+    "喷砂": 0.6,
+    "定制": 1.5
+  },
+  "packagingPerMeter": 0.3,
+  "lossRate": 0.05,
+  "taxRate": 0.13,
+  "customerPriceFactor": {
+    "普通客户": [
+      1.18,
+      1.3
+    ],
+    "工程客户": [
+      1.14,
+      1.25
+    ],
+    "经销商": [
+      1.1,
+      1.2
+    ]
+  },
+  "internalDisclaimer": "仅供公司内部报价测算，正式报价需人工确认。"
+}
